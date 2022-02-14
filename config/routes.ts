@@ -20,33 +20,51 @@
   },
   {
     path: '/welcome',
-    name: '欢迎',
+    name: '操作日志',
     icon: 'smile',
     component: './Welcome',
   },
+  // {
+  //   path: '/admin',
+  //   name: 'admin',
+  //   icon: 'crown',
+  //   access: 'canAdmin',
+  //   component: './Admin',
+  //   routes: [
+  //     {
+  //       path: '/admin/sub-page',
+  //       name: 'sub-page',
+  //       icon: 'smile',
+  //       component: './Welcome',
+  //     },
+  //     {
+  //       component: './404',
+  //     },
+  //   ],
+  // },
+  // {
+  //   name: 'list.table-list',
+  //   icon: 'table',
+  //   path: '/list',
+  //   component: './TableList',
+  // },
   {
-    path: '/admin',
-    name: 'admin',
-    icon: 'crown',
-    access: 'canAdmin',
-    component: './Admin',
-    routes: [
-      {
-        path: '/admin/sub-page',
-        name: 'sub-page',
-        icon: 'smile',
-        component: './Welcome',
-      },
-      {
-        component: './404',
-      },
-    ],
+    name: '学生管理',
+    icon: 'table',
+    path: '/studentManager',
+    component: './StudentManager',
   },
   {
-    name: 'list.table-list',
+    name: '公司管理',
     icon: 'table',
-    path: '/list',
-    component: './TableList',
+    path: '/companyManager',
+    component: './CompanyManager',
+  },
+  {
+    name: '个人中心',
+    icon: 'crown',
+    path: '/personalCenter',
+    component: './PersonalCenter',
   },
   {
     path: '/',
